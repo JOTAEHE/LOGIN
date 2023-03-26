@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 페이지 맨위 버튼 -->
+    <header>
+        <h2 class="mabi">Mabinogi</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <!-- 로그인 박스 전체 세팅 -->
+        <div class="form-box login">
+            <form action="#">
+                <h2>Login</h2>
+                <div class="input-box">
+                    <!-- 로그인 박스 -->
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" placeholder="UserID" required>
+                </div>
+                <div class="input-box">
+                    <!-- 비밀번호 박스 -->
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="forgot-pass">
+                    <!-- 비밀번호를 잃어버렸나? -->
+                </div>
+                <button type="submit">Login</button>
+                <div class="register-link">
+                    <!-- 어카운트 없음? 생성하러 ㄱ -->
+                    <p>Don't have an account?<a href="#"> Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <!-- 레지스터 세팅 -->
+        <div class="form-box register">
+            <h2>Registeration</h2>
+            <form action="#">
+                <div class="input-box">
+                    
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" placeholder="Username" required>
+                    <label></label>
+                </div>
+
+                <div class="input-box">
+                    <!-- 회원가입 유저아이디 박스 -->
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" placeholder="UserID" required>
+                </div>
+                <div class="input-box">
+                    <!-- 회원가입 비밀번호 박스 -->
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> agree to the terms & conditions </label>
+                </div>
+                <button type="submit">Register</button>
+                <div class="register-link">
+                    <!-- 이미 아이디가 있다면 로그인하러 ㄱ -->
+                    <p>Already have an account?<a href="#" class="login-link"> Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 아이디 및 비밀번호 아이콘 링크 -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
