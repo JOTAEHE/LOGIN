@@ -87,10 +87,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('illust_mabi.jpg') no-repeat;
+    background: #729375;
+    /* background: url('lostark.jpg') no-repeat;
     /* background: #000; */
-    background-size: cover;
-    background-position: center;
+    /* background-size: cover;
+    background-position: center; */
 }
 
 /* 테두리 영역 */
